@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesium Map</title>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.107/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.107/Build/Cesium/Cesium.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="#" id="home-btn">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Functions</a>
+                    <div class="dropdown-content">
+                        <a href="#" id="func1">Function 1</a>
+                        <a href="#" id="func2">Function 2</a>
+                        <a href="#" id="func3">Function 3</a>
+                    </div>
+                </li>
+                <li><a href="#" id="about-btn">About</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cesiumContainer"></div>
+        <div id="toolbar"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MySite. All rights reserved.</p>
+    </footer>
+
+    <script src="function_points.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
